@@ -1,0 +1,26 @@
+.select-overlay {
+  z-index: 0;
+  background-color: #aaa;
+  color: white;
+  font-family: Helvetica, sans-serif;
+  text-align: center;
+  padding: 15px 20px 15px 0;
+  max-width: 100px;
+}
+
+.select-overlay i {
+  margin-left: 15px;
+  font-size: 20px;
+  position: absolute;
+  top: 18px;
+}
+
+select {
+  z-index: 1;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  height: 65px;
+  width: 120px;
+  background: none;
+}
