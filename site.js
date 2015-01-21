@@ -28,9 +28,6 @@ $(function() {
 
     $fakeSelect.click(function (e) {
         e.stopPropagation();
-        $('.fake-select.active').each(function () {
-            $(this).removeClass('active').next('ul.options').hide();
-        });
         $(this).toggleClass('active').next('ul.options').toggle();
     });
 
