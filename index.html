@@ -9,60 +9,81 @@
 
     <div class="container">
 
+        <!-- styled native browser select -->
         <div id="select-box-0">
 
             <select name="select">
                 <option value="value0">native browser select</option>
-                <option value="value1">Value 1</option>
-                <option value="value2">Value 2</option>
-                <option value="value3">Value 3</option>
-                <option value="value4">Value 4</option>
-                <option value="value5">Value 5</option>
-                <option value="value6">Value 6</option>
-                <option value="value7">Value 7</option>
-                <option value="value8">Value 8</option>
-                <option value="value9">Value 9</option>
+                <option value="value1">value 1</option>
+                <option value="value2">value 2</option>
+                <option value="value3">value 3</option>
+                <option value="value4">value 4</option>
+                <option value="value5">value 5</option>
+                <option value="value6">value 6</option>
+                <option value="value7">value 7</option>
+                <option value="value8">value 8</option>
+                <option value="value9">value 9</option>
             </select>
+
+            <ul class="description">
+                <li>no javascript!</li>
+                <li>custom css can override some default browser styles, but not all</li>
+            </ul>
 
         </div>
 
-
+        <!-- styled select overlay with native menu -->
         <div id="select-box-1">
 
             <select name="select">
-                <option value="value1">Value 1</option>
-                <option value="value2">Value 2</option>
-                <option value="value3">Value 3</option>
-                <option value="value4">Value 4</option>
-                <option value="value5">Value 5</option>
-                <option value="value6">Value 6</option>
-                <option value="value7">Value 7</option>
-                <option value="value8">Value 8</option>
-                <option value="value9">Value 9</option>
+                <option value="value1">value 1</option>
+                <option value="value2">value 2</option>
+                <option value="value3">value 3</option>
+                <option value="value4">value 4</option>
+                <option value="value5">value 5</option>
+                <option value="value6">value 6</option>
+                <option value="value7">value 7</option>
+                <option value="value8">value 8</option>
+                <option value="value9">value 9</option>
             </select>
 
             <div class="select-overlay">
-              <span>select overlay with native menu</span>
+                <span>select overlay with native menu</span>
             </div>
+
+            <ul class="description">
+                <li>a styled element sits underneath a transparent &lt;select&gt;</li>
+                <li>js listens for a menu change event and updates the text in the styled element with the selected value</li>
+            </ul>
 
         </div>
 
+        <!-- styled select overlay with styled menu -->
         <div id="select-box-2">
 
             <select name="select">
-                <option value="value1">Value 1</option>
-                <option value="value2">Value 2</option>
-                <option value="value3">Value 3</option>
-                <option value="value4">Value 4</option>
-                <option value="value5">Value 5</option>
-                <option value="value6">Value 6</option>
-                <option value="value7">Value 7</option>
-                <option value="value8">Value 8</option>
-                <option value="value9">Value 9</option>
+                <option value="value1">value 1</option>
+                <option value="value2">value 2</option>
+                <option value="value3">value 3</option>
+                <option value="value4">value 4</option>
+                <option value="value5">value 5</option>
+                <option value="value6">value 6</option>
+                <option value="value7">value 7</option>
+                <option value="value8">value 8</option>
+                <option value="value9">value 9</option>
             </select>
 
             <div class="fake-select">select overlay with styled menu</div>
             <ul class="options"></ul>
+
+            <ul class="description">
+                <li>a styled element sits underneath a transparent &lt;select&gt;</li>
+                <li>js loops through each menu &lt;option&gt; and adds its text and val to a new list</li>
+                <li>js listens for a click on the styled element, which toggles an active class on the arrow and shows the new list of options</li>
+                <li>js listens for a click on the options list items, which updates the value of the &lt;select&gt;, updates the text in the styled element, and closes the menu</li>
+                <li>js also listens for a click on the document to close the menu</li>
+                <li>note that on mobile devices, this won't trigger native selects, such as the roller thingy on ios</li>
+            </ul>
 
         </div>
 
